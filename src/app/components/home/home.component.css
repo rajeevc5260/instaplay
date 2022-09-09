@@ -1,0 +1,62 @@
+.loading-spinner{
+    text-align: center;
+}
+.home-content h1 {
+  color: white;
+  font-weight: 500;
+  font-size: 28px;
+  margin: 40px 65px;
+}
+.cards-main {
+  display: flex;
+  justify-content: center;
+}
+.cards {
+  width: 310px;
+  height: 208px;
+  color: white;
+}
+
+.cards-bottom {
+  display: flex;
+  justify-content: center;
+  height: 85px;
+  padding: 20px 20px;
+  background: linear-gradient(0deg, #1e3456 0%, #2c527e 105.38%);
+}
+.bottom-content {
+  display: block;
+}
+.bottom-content h6 {
+  font-size: 13px;
+  font-weight: 600;
+}
+.thumbnail {
+  height: 100px;
+  background-position: center;
+}
+.cards-bottom p {
+  font-size: 13px;
+}
+.rating {
+  display: flex;
+  margin-top: 6px;
+}
+.rating i {
+  margin-right: 4px;
+  color: #ffe234;
+}
+.spacebtw {
+  flex: 1 1 auto;
+}
+.playbtn {
+  margin-top: 10px;
+  text-align: center;
+  padding: 5px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  color: white;
+  background: linear-gradient(180deg, #ff9966 0%, #ff5e62 100%);
+  cursor: pointer;
+}

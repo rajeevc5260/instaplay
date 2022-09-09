@@ -1,0 +1,15 @@
+<nav class="navbar">
+  <div class="container-fluid">
+    <img src="../../../assets/images/logo.png" alt="Logo" height="36" class="d-inline-block align-text-top">
+    <form class="d-flex" role="search">
+      <input
+        class="form-control"
+        type="search"
+        placeholder="Search movies"
+        aria-label="Search"
+        [(ngModel)]="filteredString"
+      />
+      <button class="btn" type="submit"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></button>
+    </form>
+  </div>
+</nav>

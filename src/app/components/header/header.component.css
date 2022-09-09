@@ -1,0 +1,31 @@
+.navbar {
+  background-color: #263f61;
+}
+.navbar input {
+  width: 300px;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.06);
+  border-radius: 5px 0px 0px 5px;
+}
+.navbar input::placeholder {
+  color: #fff;
+}
+.navbar img {
+  margin-left: 40px;
+}
+.navbar .btn {
+  margin-right: 40px;
+  font-size: larger;
+  color: #fff;
+  border-radius: 0px 5px 5px 0px;
+  background: linear-gradient(180deg, #ff9966 0%, #ff5e62 100%);
+  border: none;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar img {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    height: 22px;
+  }
+}

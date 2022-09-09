@@ -1,0 +1,49 @@
+
+<div class="home-main">
+<!-- home data starts-->
+  <img src="../../../assets/images/bgImg.png" class="img-fluid" alt="" />
+  
+<!-- loading spinner starts-->
+  <div class="loading-spinner">
+    <circle-progress *ngIf="showSpinner"
+    [percent]="100"
+    [radius]="100"
+    [outerStrokeWidth]="16"
+    [innerStrokeWidth]="8"
+    [outerStrokeColor]="'blue'"
+    [innerStrokeColor]="'#C7E596'"
+    [animation]="true"
+    [animationDuration]="10000"
+  ></circle-progress>
+</div>
+<!-- loading spinner ends -->
+  <div class="home-content">
+    <h1>Trending</h1>
+    <div class="row row-cols-1 row-cols-md-2 g-4 cards-main">
+      <div class="cards" *ngFor="let item of dataArray[1] | filter:filteredString ">
+        <!-- <img class="card-img" [style.background-image]="getSafeStyle(item.poster_path)"> -->
+        <div
+        class="thumbnail" style="background-image: 
+        url(https://image.tmdb.org/t/p/w500{{item.poster_path}}); ">
+        .
+      </div>
+        <div class="overview">
+          <div class="cards-bottom">
+            <div class="bottom-content">
+              <h6 class="card-title">{{ item.title }}</h6>
+              <div class="rating">
+                <i class="fa-sharp fa-solid fa-star"></i>
+                <p>{{item.vote_average}} / 10</p>
+              </div>
+            </div>
+            <div class="spacebtw"></div>
+            <div class="playbtn">
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- home data ends -->
